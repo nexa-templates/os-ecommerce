@@ -1,5 +1,7 @@
 # Nexa Ecommerce
 
+The Nexa Templates organization develops this template and publishes its Cloudflare Worker as a public **Preview**. Products and orders are fictional and actions simulate the interface; no payments or fulfillment run here. GitHub Pages is not used. Build the customer's real commerce workflows in their own project and account.
+
 A Shopify-inspired store administration starter: sales overview, order statuses, fulfillment tasks, and best-selling products. Original Nexa interface; no Shopify assets, code, or services are included. Product illustrations are drawn with CSS.
 
 [Live preview](https://nexa-ecommerce.nexa-templates.workers.dev/) · [Use with Nexa](https://admin.nexaintel.work)
@@ -17,7 +19,7 @@ npm run dev          # http://localhost:3000; PORT overrides the port
 npm run build        # static site in dist/
 ```
 
-Edit `index.html`, `styles.css`, and `app.js`. Sample orders, products, metrics, and the SVG chart are in `index.html`. GitHub Pages serves the main branch from the repository root.
+Edit `index.html`, `styles.css`, and `app.js`. Sample orders, products, metrics, and the SVG chart are in `index.html`. Push to `main` to update the published Worker preview through Nexa Build & deploy.
 
 ## Make it yours
 
