@@ -1,9 +1,10 @@
 {
-  "name": "@nexaintel2/ecommerce",
+  "name": "@nexa-templates/ecommerce",
   "version": "0.1.0",
   "private": true,
   "type": "module",
   "scripts": { "dev": "node scripts/dev.mjs", "build": "node scripts/build.mjs" },
   "engines": { "node": ">=22" },
+  "devDependencies": { "wrangler": "4.156.1" },
   "license": "MIT"
 }

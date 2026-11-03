@@ -2,7 +2,7 @@
 
 A Shopify-inspired store administration starter: sales overview, order statuses, fulfillment tasks, and best-selling products. Original Nexa interface; no Shopify assets, code, or services are included. Product illustrations are drawn with CSS.
 
-[Live preview](https://nexaintel2.github.io/ecommerce/) · [Use with Nexa](https://admin.nexaintel.work)
+[Live preview](https://nexa-ecommerce.nexa-templates.workers.dev/) · [Use with Nexa](https://admin.nexaintel.work)
 
 ![Ecommerce preview](preview.webp)
 
@@ -21,7 +21,9 @@ Edit `index.html`, `styles.css`, and `app.js`. Sample orders, products, metrics,
 
 ## Make it yours
 
-Choose **Use template** in Nexa, or import `https://github.com/nexaintel2/ecommerce.git` as a new project. Preserve upstream Git history for updates. Set a unique Worker name in `wrangler.jsonc`, build, and deploy `dist/` using the project's Cloudflare connection. No account IDs, secrets, or bindings are included.
+Choose **Use template** in Nexa, or import `https://github.com/nexa-templates/ecommerce.git` as a new project. Preserve upstream Git history for updates. Set a unique Worker name in `wrangler.jsonc` and deploy using the project's Cloudflare connection. No account IDs, secrets, or bindings are included.
+
+In Nexa **Build & deploy**, select the connected Worker and production branch, use `/` as the root, `npm ci` to install, `npm run build` to build, and `npx --no-install wrangler deploy --name "$NEXA_WORKER_NAME"` to deploy. Enable automatic deployments. Run the initial build, follow its exact commit to success, and verify the saved deployment and Visit URL. Later production-branch pushes use this same pipeline. The public preview needs project sign-in disabled; it contains fictional data only.
 
 Build the product catalog, inventory, customer accounts, order lifecycle, storefront, checkout, payment-provider integration, shipping, and tax rules as needed. Use a payment provider's hosted checkout for real transactions. There are no database migrations or integrations yet.
 
