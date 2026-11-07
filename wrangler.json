@@ -9,7 +9,11 @@
   },
   "preview_urls": false,
   "vars": {
-    "PREVIEW_MODE": "false"
+    "PREVIEW_MODE": "false",
+    "ACCESS_ISSUER": "",
+    "ACCESS_AUD": "",
+    "APP_ORIGIN": "",
+    "ACCESS_PATHS": "/"
   },
   "main": "src/worker.js"
 }

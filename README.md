@@ -10,7 +10,7 @@ Install dependencies using the included lockfile, run `npm run build`, then `npm
 
 ## Access
 
-Public visual storefront. No real checkout or financial transactions.
+Protect the application hostname with Cloudflare Access. Configure `ACCESS_ISSUER`, `ACCESS_AUD` and `APP_ORIGIN`. The Worker also verifies signed tokens and rejects alternate hostnames.
 
 `PREVIEW_MODE=true` is only for an isolated public sample deployment with no customer data or live services. Real installations use `false`.
 ## Source

@@ -18,6 +18,16 @@
   "license": "MIT",
   "cloudflare": {
     "label": "Ecommerce",
-    "bindings": {}
+    "bindings": {
+      "ACCESS_ISSUER": {
+        "description": "Cloudflare Access team URL"
+      },
+      "ACCESS_AUD": {
+        "description": "Access application audience"
+      },
+      "APP_ORIGIN": {
+        "description": "Application HTTPS origin"
+      }
+    }
   }
 }
