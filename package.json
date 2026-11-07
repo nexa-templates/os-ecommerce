@@ -1,10 +1,23 @@
 {
-  "name": "@nexa-templates/ecommerce",
+  "name": "@nexa-os-templates/ecommerce",
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "scripts": { "dev": "node scripts/dev.mjs", "build": "node scripts/build.mjs" },
-  "engines": { "node": ">=22" },
-  "devDependencies": { "wrangler": "4.156.1" },
-  "license": "MIT"
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "build": "node scripts/build.mjs",
+    "deploy": "wrangler deploy",
+    "test": "node --test tests/access.test.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "wrangler": "4.156.1"
+  },
+  "license": "MIT",
+  "cloudflare": {
+    "label": "Ecommerce",
+    "bindings": {}
+  }
 }

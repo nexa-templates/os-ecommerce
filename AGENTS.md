@@ -7,3 +7,5 @@ This repository is a visual starter, not a storefront or payment service. Preser
 - Establish products, currencies, shipping, tax, payment, and inventory requirements before implementing transactions. Use a provider's hosted checkout and server-verified webhooks.
 - Imported projects should use their own Cloudflare account, Worker name, resources, and secrets. Never commit customer records or credentials to this public upstream; retain Git history for future merges.
 - Run npm run build, check JavaScript syntax, and inspect desktop/mobile browser layouts and order filtering. Add meaningful transaction and access tests as real functionality is implemented.
+
+This standalone version uses Cloudflare Access. Production must fail closed without its issuer, audience and application origin. Local sample tests run with PREVIEW_MODE=true; signed-token tests cover the production gate. Never enable preview mode for customer data or live email.

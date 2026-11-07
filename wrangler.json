@@ -1,0 +1,15 @@
+{
+  "name": "nexa-os-ecommerce",
+  "compatibility_date": "2026-11-03",
+  "workers_dev": true,
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS",
+    "run_worker_first": true
+  },
+  "preview_urls": false,
+  "vars": {
+    "PREVIEW_MODE": "false"
+  },
+  "main": "src/worker.js"
+}

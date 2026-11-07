@@ -1,36 +1,18 @@
-# Nexa Ecommerce
+# Ecommerce
 
-The Nexa Templates organization develops this template and publishes its Cloudflare Worker as a public **Preview**. Products and orders are fictional and actions simulate the interface; no payments or fulfillment run here. GitHub Pages is not used. Build the customer's real commerce workflows in their own project and account.
+Visual starter; functional accounting/payment workflows remain planned.
 
-A Shopify-inspired store administration starter: sales overview, order statuses, fulfillment tasks, and best-selling products. Original Nexa interface; no Shopify assets, code, or services are included. Product illustrations are drawn with CSS.
+[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/nexa-templates/os-ecommerce)
 
-[Live preview](https://nexa-ecommerce.nexa-templates.workers.dev/) · [Use with Nexa](https://admin.nexaintel.work)
+## Run and deploy
 
-![Ecommerce preview](preview.webp)
+Install dependencies using the included lockfile, run `npm run build`, then `npm run deploy`. Wrangler provisions the declared resources. No Nexa account or API key is required for the default configuration.
 
-This is a **visual template with fictional sample data**, not a working shop. Order search and filters work locally; other controls explain that they are previews. There is no storefront, checkout, payment processing, inventory service, persistence, authentication, or external asset dependency.
+## Access
 
-## Run and build
+Public visual storefront. No real checkout or financial transactions.
 
-Use Node.js 22 or newer. No dependency installation is needed.
+`PREVIEW_MODE=true` is only for an isolated public sample deployment with no customer data or live services. Real installations use `false`.
+## Source
 
-```sh
-npm run dev          # http://localhost:3000; PORT overrides the port
-npm run build        # static site in dist/
-```
-
-Edit `index.html`, `styles.css`, and `app.js`. Sample orders, products, metrics, and the SVG chart are in `index.html`. Push to `main` to update the published Worker preview through Nexa Build & deploy.
-
-## Make it yours
-
-Choose **Use template** in Nexa, or import `https://github.com/nexa-templates/ecommerce.git` as a new project. Preserve upstream Git history for updates. Set a unique Worker name in `wrangler.jsonc` and deploy using the project's Cloudflare connection. No account IDs, secrets, or bindings are included.
-
-In Nexa **Build & deploy**, select the connected Worker and production branch, use `/` as the root, `npm ci` to install, `npm run build` to build, and `npx --no-install wrangler deploy --name "$NEXA_WORKER_NAME"` to deploy. Enable automatic deployments. Run the initial build, follow its exact commit to success, and verify the saved deployment and Visit URL. Later production-branch pushes use this same pipeline. The public preview needs project sign-in disabled; it contains fictional data only.
-
-Build the product catalog, inventory, customer accounts, order lifecycle, storefront, checkout, payment-provider integration, shipping, and tax rules as needed. Use a payment provider's hosted checkout for real transactions. There are no database migrations or integrations yet.
-
-## Releases
-
-- **0.1.0** — Responsive store dashboard, local order search and filters, static build, and Cloudflare assets configuration.
-
-MIT licensed. See `LICENSE`.
+Adapted from [ecommerce](https://github.com/nexa-templates/ecommerce/tree/646dc5ffa26043b5ec29720c3dfd84f8205ebd25) at `646dc5ffa26043b5ec29720c3dfd84f8205ebd25`. Original license files are retained. These source files are ordinary Wrangler applications; no Nexa manifest is required.
